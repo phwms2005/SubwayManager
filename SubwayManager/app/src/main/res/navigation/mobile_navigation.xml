@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="subway.v5.ui.home.HomeFragment"
+        tools:layout="@layout/map_scroll_layout">
+        <action
+            android:id="@+id/action_nav_home_to_nav_result"
+            app:destination="@id/nav_result" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_result"
+        android:name="subway.v5.ui.result.ResultFragment"
+        tools:layout="@layout/fragment_result" />
+
+    <fragment
+        android:id="@+id/nav_complaints"
+        android:name="subway.v5.ui.complaints.ComplaintsFragment"
+        tools:layout="@layout/fragment_complaints" />
+    <fragment
+        android:id="@+id/nav_notices"
+        android:name="subway.v5.ui.notice.NoticeFragment"
+        android:label="fragment_notice"
+        tools:layout="@layout/fragment_notice" />
+    <fragment
+        android:id="@+id/nav_credits"
+        android:name="subway.v5.ui.credit.CreditsFragment"
+        android:label="fragment_credits"
+        tools:layout="@layout/fragment_credits" />
+    <fragment
+        android:id="@+id/nav_laf"
+        android:name="subway.v5.ui.laf.LafFragment"
+        android:label="fragment_laf"
+        tools:layout="@layout/fragment_laf" />
+    <fragment
+        android:id="@+id/nav_schedules"
+        android:name="subway.v5.ui.schedule.SchedulesFragment"
+        android:label="fragment_schedules"
+        tools:layout="@layout/fragment_schedules" />
+    <fragment
+        android:id="@+id/nav_settings"
+        android:name="subway.v5.ui.settings.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" />
+
+</navigation>

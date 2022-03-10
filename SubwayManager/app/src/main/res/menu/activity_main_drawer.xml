@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_menu_home"
+            android:title="메인화면"
+            android:checked="true"
+            />
+        <item
+            android:id="@+id/nav_schedules"
+            android:icon="@drawable/schedule"
+            android:title="열차시간표(일반/급행)"
+            />
+        <item
+            android:id="@+id/nav_laf"
+            android:icon="@drawable/find"
+            android:title="분실물" />
+        <item
+            android:id="@+id/nav_complaints"
+            android:icon="@drawable/ic_complain"
+            android:title="민원제기" />
+        <item
+            android:id="@+id/nav_notices"
+            android:icon="@drawable/ic_notice"
+            android:title="공지" />
+        <item
+            android:id="@+id/nav_credits"
+            android:icon="@drawable/credit"
+            android:title="크레딧" />
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_menu_settings"
+            android:title="설정" />
+    </group>
+
+</menu>
